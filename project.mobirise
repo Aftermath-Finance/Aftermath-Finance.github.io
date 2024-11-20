@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Aftermath-Finance",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#101a27"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/aftermath.webp",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://Aftermath-Finance.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://Aftermath-Finance.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "jecfkyjzli",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Aftermath Finance™ | Home Official Site",
+        "meta_descr": "Join Aftermath Finance for the future of decentralized trading. Experience the security of self-custody and the ease of a centralized exchange.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/aftermath-finance.png\" alt=\"Aftermath Finance\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uuEvlAGdpU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#101a27\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#101a27\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Aftermath Finance: Navigating the Future of Decentralized Financial Solutions</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving landscape of decentralized finance (DeFi), innovative platforms are emerging to address the unique challenges faced by users in the crypto ecosystem. One such platform is Aftermath Finance, a comprehensive DeFi solution designed to empower users with advanced financial tools, yield optimization, and seamless asset management. This blog will explore what Aftermath Finance is, its key features, the problems it aims to solve, and its potential impact on the DeFi landscape.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Aftermath Finance?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aftermath Finance is a decentralized finance platform that offers a suite of financial services and tools to enable users to manage their crypto assets effectively. Built on the principles of transparency, security, and community engagement, Aftermath Finance aims to simplify the complex world of DeFi for both novice and experienced users. The platform provides various functionalities, including yield farming, staking, liquidity provision, and automated portfolio management.<br><br><b>The Vision Behind Aftermath Finance</b><br>The vision of Aftermath Finance is to create an inclusive financial ecosystem where users can maximize their returns on crypto investments while minimizing risks. By providing easy-to-use tools and resources, Aftermath Finance aims to lower the barriers to entry for individuals looking to participate in DeFi. The platform's emphasis on user education and community involvement reflects its commitment to fostering a knowledgeable and engaged user base.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Aftermath Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Yield Farming</b><br>Yield farming is one of the central features of Aftermath Finance, allowing users to earn rewards by providing liquidity to various pools. Users can stake their assets in liquidity pools, which are then utilized by the platform for lending and borrowing activities. In return for their contributions, users receive yield rewards, enhancing their overall returns.<br><br><b>2. Staking</b><br>Aftermath Finance offers a staking mechanism that enables users to lock their tokens for a specified period in exchange for rewards. Staking not only helps secure the network but also provides users with a steady stream of income. The platform supports multiple tokens, allowing users to choose the assets that best fit their investment strategies.<br><br><b>3. Automated Portfolio Management</b><br>Understanding the complexities of asset management can be daunting, especially in the fast-paced world of DeFi. Aftermath Finance addresses this challenge with automated portfolio management tools. Users can set specific parameters and let the platform optimize their asset allocation based on market conditions, risk tolerance, and investment goals.<br><br><b>4. Cross-Chain Compatibility</b><br>In an increasingly interconnected blockchain ecosystem, cross-chain compatibility is essential for maximizing opportunities. Aftermath Finance aims to facilitate seamless transactions and interactions across multiple blockchain networks, allowing users to access a broader range of assets and services.<br><br><b>5. User Education and Resources</b><br>Recognizing that many users are new to the DeFi space, Aftermath Finance prioritizes user education. The platform provides educational resources, tutorials, and guides to help users understand the intricacies of DeFi, enabling them to make informed decisions about their investments.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Problems Aftermath Finance Aims to Solve</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Complexity of DeFi</b><br>One of the most significant barriers to entry in the DeFi space is its complexity. New users often find it challenging to navigate the multitude of platforms, protocols, and financial products available. Aftermath Finance seeks to simplify this experience by providing a user-friendly interface and comprehensive educational resources.<br><br><b>2. Risk Management</b><br>DeFi is inherently risky, with many platforms susceptible to smart contract vulnerabilities, market volatility, and liquidity issues. Aftermath Finance addresses these risks by offering tools for automated portfolio management and risk assessment, helping users make more informed decisions about their investments.<br><br><b>3. Accessibility</b><br>Despite the potential of DeFi to democratize finance, many individuals remain excluded due to a lack of understanding or access to essential tools. Aftermath Finance is committed to promoting accessibility by offering a platform that caters to users of all experience levels, ensuring that everyone can participate in the DeFi ecosystem.<br><br><b>4. Fragmentation of Services</b><br>The DeFi landscape is often fragmented, with users needing to navigate multiple platforms to access different services. Aftermath Finance aims to consolidate various financial tools and services into a single platform, streamlining the user experience and enhancing overall efficiency.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Aftermath Finance Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User Interface and Experience</b><br>Aftermath Finance boasts an intuitive user interface designed to make navigation easy for users. The platform's layout is organized and visually appealing, allowing users to quickly find the tools and information they need. Features such as dashboards and performance analytics provide users with real-time insights into their investments.<br><br><b>2. Yield Farming Process</b><br>The yield farming process on Aftermath Finance is straightforward:<br><b>Select a Pool:</b> Users can choose from various liquidity pools based on their preferred assets and risk levels.<br><b>Deposit Funds:</b> Users deposit their tokens into the selected pool, contributing to the platform's liquidity.<br><b>Earn Rewards:</b> As users provide liquidity, they earn yield rewards, which can be claimed or reinvested.<br><br><b>3. Staking Mechanism</b><br>Staking on Aftermath Finance follows a simple process:<br><b>Choose a Token:</b> Users select the token they wish to stake from the available options.<br><b>Lock Tokens:</b> Users specify the amount and duration for which they want to stake their tokens.<br><b>Receive Rewards:</b> Stakers earn rewards based on the amount and duration of their staked tokens, which can be withdrawn or reinvested.<br><br><b>4. Automated Portfolio Management</b><br>Aftermath Finance’s automated portfolio management tools enable users to:<br><b>Set Parameters:</b> Users input their investment goals, risk tolerance, and asset preferences.<br><b>Algorithmic Optimization:</b> The platform’s algorithms analyze market conditions and optimize asset allocation accordingly.<br><b>Monitor Performance:</b> Users can track their portfolio's performance through real-time analytics and make adjustments as needed.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Benefits of Using Aftermath Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User-Friendly Platform</b><br>Aftermath Finance's emphasis on user experience makes it accessible to both new and experienced users. The intuitive interface and educational resources empower users to navigate the DeFi landscape confidently.<br><br><b>2. Enhanced Financial Returns</b><br>By offering yield farming, staking, and automated portfolio management, Aftermath Finance helps users maximize their returns on investment. Users can take advantage of various strategies to enhance their financial outcomes.<br><br><b>3. Risk Mitigation Tools</b><br>The platform's focus on risk management equips users with the tools they need to navigate the inherent risks of DeFi. Automated portfolio management aids in making informed investment decisions, reducing exposure to potential losses.<br><br><b>4. Community Engagement</b><br>Aftermath Finance encourages community involvement through governance mechanisms and user feedback. This engagement fosters a sense of ownership among users and helps shape the platform's future development.<br><br><b>5. Cross-Chain Opportunities</b><br>With its commitment to cross-chain compatibility, Aftermath Finance allows users to access a diverse range of assets and services, enhancing potential returns and liquidity.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Aftermath Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Services and Features</b><br>As the DeFi landscape continues to evolve, Aftermath Finance is likely to expand its offerings. This could include additional financial products, enhanced risk assessment tools, and integrations with other platforms to provide users with a comprehensive DeFi experience.<br><br><b>2. Continuous User Education</b><br>Aftermath Finance will likely continue to prioritize user education, developing new resources, webinars, and tutorials to keep users informed about the latest trends and best practices in the DeFi space.<br><br><b>3. Enhanced Security Measures</b><br>To address security concerns, Aftermath Finance may invest in advanced security protocols and conduct regular audits. Building a reputation for strong security will be crucial for attracting and retaining users.<br><br><b>4. Community-Driven Development</b><br>The platform will likely emphasize community engagement, seeking feedback and input from users. This approach can help prioritize features and improvements that align with user needs.<br><br><b>5. Adoption of Layer 2 Solutions</b><br>As scalability remains a challenge for many DeFi platforms, Aftermath Finance may explore the integration of Layer 2 solutions to enhance transaction speeds and reduce costs, providing a better user experience.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>The DeFi space is characterized by significant volatility, with asset prices fluctuating dramatically. Users must be aware of the risks associated with market movements and conduct thorough research before investing.<br><br><b>2. Regulatory Landscape</b><br>As DeFi gains prominence, it may attract regulatory scrutiny. Aftermath Finance must navigate potential regulatory challenges to ensure compliance and maintain user trust.<br><br><b>3. Competition</b><br>The DeFi market is highly competitive, with numerous platforms offering similar services. Aftermath Finance must continually innovate and differentiate itself to attract and retain users.<br><br><b>4. Security Risks</b><br>Despite efforts to enhance security, the DeFi space is not immune to vulnerabilities. Users should exercise caution and conduct due diligence when engaging with any DeFi platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aftermath Finance is poised to make a significant impact on the decentralized finance landscape by providing users with comprehensive financial tools and services. Its focus on user experience, risk management, and community engagement positions it as a valuable resource for individuals looking to navigate the complexities of DeFi.<br><br>As the platform continues to evolve, it will play a crucial role in shaping the future of decentralized finance. By empowering users with the tools they need to manage their assets effectively, Aftermath Finance embodies the principles of inclusivity, transparency, and innovation that define the DeFi movement.<br><br>For individuals seeking to explore the world of decentralized finance, Aftermath Finance offers a promising gateway to a new era of financial opportunities. With its commitment to education, security, and user engagement, the platform is well-positioned to thrive in the dynamic and rapidly changing world of DeFi.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uuEvlNT243",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
